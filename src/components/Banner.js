@@ -1,5 +1,6 @@
 import React from 'react';
-import Logo from '../img/infinity.png';
+import Logo from '../img/like.png';
+import ShapeLeft from '../img/shape1.png';
 import '../App.css';
 
 function Banner () {
@@ -13,15 +14,15 @@ function Banner () {
       <div className="banner">
           <div className="container">
               <div className="row">
-                <div className="col-sm-12">
-                    <div className="banner-area">
-                    <center>
-                        <img className="banner-image" src={Logo} alt="images"/>
-                    </center>
+                <div className="banner-image-mobile">
+                    <div className="col-xl-7 col-lg-6 d-lg-block">
+                        <div className="banner-area">
+                            <img className="banner-image" src={Logo} alt="images"/>
+                        </div>
                     </div>
                 </div>
-                <div className="col-12 col-lg-6">
-                    <div className="banner-text text-left">
+                <div className="col-xl-5 col-lg-6">
+                    <div className="banner-text text-left mt-4">
                         <h1 className="title-font">
                             How can we help
                             <br/> 
@@ -31,6 +32,14 @@ function Banner () {
                             <span className="text-customer" >CUSTOMER?</span> 
                         </h1>
                     </div>
+                </div>
+                <div className="banner-image-desktop col-xl-7 col-lg-6 d-lg-block">
+                    <div className="banner-area">
+                        <img className="banner-image" src={Logo} alt="images"/>
+                    </div>
+                </div>
+                <div className="bg-shape-left">
+                    <img src={ShapeLeft} alt="" className="shape-left"/>
                 </div>
               </div>
           </div>

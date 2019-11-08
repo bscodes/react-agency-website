@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display:900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Paytone+One&display=swap');
 
 
 .App {
@@ -6,22 +6,28 @@
 }
 
 .title-font {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Paytone One', sans-serif;
     line-height: 130%;
 }
 
 .banner {
     color: white;
+    padding: 190px 0 125px;
+}
+.banner-image-mobile {
+    display: none;
 }
 
 .banner-image {
-    width: 100%;
+    width: 90%;
 }
 
+.banner-text {
+    padding-top: 39%;
+}
 
 .banner-text h1 {
     font-size: 45px;
-    text-shadow: 2px 7px 12px rgba(0, 0, 0,  0.38);
 }
 
 .banner-text .text-yellow {
@@ -35,6 +41,20 @@
 
 /*for mobile phones*/
 @media (min-width: 320px) and (max-width: 480px) {
+    .banner {
+        padding: 120px 0 100px;
+    }
+    .banner-image-desktop {
+        display: none;
+    }
+    
+    .banner-image-mobile {
+        display: block;
+    }
+
+    .banner-text {
+        padding-top: 5%;
+    }
 
     .banner-image {
         width: 90%;
