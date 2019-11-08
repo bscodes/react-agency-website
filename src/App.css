@@ -1,22 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:900&display=swap');
+
+.body {
+    background: linear-gradient(180deg,#240044 0,#0f0240 25%,#400959 40%,#0f0240 65%,#0f0240);;
+}
+
 .App {
-  text-align: center;
+    text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+.title-font {
+    font-family: 'Playfair Display', serif;
+    line-height: 130%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.banner {
+    color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+.banner-image {
+    width: 100%;
+}
+
+
+.banner-text h1 {
+    font-size: 45px;
+    text-shadow: 2px 7px 12px rgba(0, 0, 0,  0.38);
+}
+
+.banner-text .text-yellow {
+    color: #7ced03; 
+}
+
+.banner-text .text-customer {
+    color: rgb(132, 220, 255);
+}
+
+
+/*for mobile phones*/
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .banner-image {
+        width: 90%;
+    }
+
 }
