@@ -3,6 +3,10 @@ import Logo from '../img/infinity.png';
 import '../App.css';
 
 function Banner () {
+    // referans https://cdn.dribbble.com/users/380831/screenshots/7118539/media/c8aed4a7ea3dd89e3554b5ca4fc3ef20.png
+    // ref https://robotic.netlify.com/index-demo-1.html
+    // ref http://html.xpeedstudio.com/agmycoo/index-v4.html
+    // ref http://quomodosoft.com/html/wan/wan/home5-sass.html
     return (
       <div className="banner">
           <div className="container">
@@ -28,7 +32,6 @@ function Banner () {
                 </div>
               </div>
           </div>
-        
       </div>
     );
   }

@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:900&display=swap');
 
-.body {
-    background: linear-gradient(180deg,#240044 0,#0f0240 25%,#400959 40%,#0f0240 65%,#0f0240);;
-}
 
 .App {
     text-align: center;
