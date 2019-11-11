@@ -27,7 +27,7 @@
 }
 
 .banner-text h1 {
-    font-size: 45px;
+    font-size: 62px;
 }
 
 .banner-text .text-yellow {
@@ -42,7 +42,7 @@
 /*for mobile phones*/
 @media (min-width: 320px) and (max-width: 480px) {
     .banner {
-        padding: 120px 0 100px;
+        padding: 20px 0 100px;
     }
     .banner-image-desktop {
         display: none;
@@ -53,7 +53,13 @@
     }
 
     .banner-text {
-        padding-top: 5%;
+        padding-top: 0;
+    }
+
+    .banner-text h1 {
+        font-size: 48px;
+        margin-bottom: 8%;
+        padding: 4%;
     }
 
     .banner-image {
