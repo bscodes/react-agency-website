@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css?family=Paytone+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
+
+$primaryColor: #352793;
+$secondaryColor: #1D4AD1;
+$primaryFont: 'Paytone One',
+sans-serif;
+$secondaryFont: 'Nunito', sans-serif;
+
+
+.App {
+    text-align: center;
+}
+
+.title-font {
+    font-family: $primaryFont;
+    line-height: 130%;
+}
+
+.header-transparent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+
+    .navbar-brand {
+        color: white;
+        transform: rotate(-90deg);
+        font-weight: 900;
+    }
+
+    span i {
+        color: white;
+        padding-left: 50%;
+    }
+    .navbar-toggler:focus {
+        outline: none!important;
+    }
+
+    nav.navbar ul li a.nav-link {
+        padding: 40px 0;
+        color: white;
+        font-family: $secondaryFont;
+        font-weight: bold;
+    }
+}
+
+
+.banner {
+    color: white;
+    padding: 190px 0 125px;
+}
+
+.banner-image-mobile {
+    display: none;
+}
+
+.banner-image {
+    width: 90%;
+}
+
+.banner-text {
+    padding-top: 39%;
+}
+
+.banner-text h1 {
+    font-size: 62px;
+}
+
+.banner-text .text-yellow {
+    color: #7ced03;
+}
+
+.banner-text .text-customer {
+    color: rgb(132, 220, 255);
+}
+
+
+/* for mobile phones (portrait) */
+@media (min-width: 320px) and (max-width: 480px) {
+    .header-transparent {
+
+        .navbar {
+            padding-top: 5%;
+
+            .navbar-brand {
+                margin-left: 3%;
+            }
+        }
+
+        .navbar-collapse.show,
+        .collapsing {
+            background: $primaryColor;
+        }
+
+        nav.navbar ul li a.nav-link {
+            color: white;
+            padding: 1rem;
+            border-bottom: 1px solid $secondaryColor;
+        }
+    }
+
+    .banner {
+        padding: 20px 0 100px;
+    }
+
+    .banner-image-desktop {
+        display: none;
+    }
+
+    .banner-image-mobile {
+        display: block;
+    }
+
+    .banner-text {
+        padding-top: 10%;
+    }
+
+    .banner-text h1 {
+        font-size: 48px;
+        margin-bottom: 8%;
+        padding: 4%;
+    }
+
+    .banner-image {
+        width: 90%;
+    }
+
+}
+
+/* for desktop */
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 30px !important;
+        padding-left: 30px !important;
+    }
+}
+
+/* for mobile phones (landscape) */
+
+/* iphone X */
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation : landscape) {
+    .header-transparent {
+        .navbar {
+            margin-top: 13px;
+        }
+
+        .navbar-collapse.show,
+        .collapsing {
+            background: $primaryColor;
+        }
+
+        nav.navbar ul li a.nav-link {
+            color: white;
+            padding: 1rem;
+            border-bottom: 1px solid $secondaryColor;
+        }
+    }
+
+    .banner {
+        padding: 0px !important;
+
+        .banner-text {
+            padding-top: 10%;
+            
+            h1 {
+                font-size: 48px;
+                text-align: center;
+            }
+        }
+
+        .banner-image {
+            width: 50%;
+            margin-top: 30px;
+        }
+    }
+
+    
+    
+    
+  }
+
+  /* for mobile phones (landscape) */
+  /* iphone 6/7/8 */
+  @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation : landscape) {
+    .header-transparent {
+
+        .navbar {
+            margin-top: 13px;
+        }
+
+        nav.navbar.fixed-top {
+            position: relative;
+        }
+
+        .navbar-collapse.show,
+        .collapsing {
+            background: $primaryColor;
+        }
+
+        nav.navbar ul li a.nav-link {
+            color: white;
+            padding: 1rem;
+            border-bottom: 1px solid $secondaryColor;
+        }
+    }
+
+
+    .banner {
+        padding: 0px !important;
+        .banner-text {
+            padding-top: 10%;
+
+            h1 {
+                font-size: 48px;
+                text-align: center;
+            }
+        }
+        .banner-image {
+        width: 50%;
+        margin-top: 30px;
+        }
+    }
+  }
+
+  /* tablets (portrait) */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .header-transparent {
+
+        .navbar {
+            margin-top: 13px;
+        }
+
+        nav.navbar.fixed-top {
+            position: relative;
+        }
+
+        .navbar-collapse.show,
+        .collapsing {
+            background: $primaryColor;
+        }
+
+        nav.navbar ul li a.nav-link {
+            color: white;
+            padding: 1rem;
+            border-bottom: 1px solid $secondaryColor;
+        }
+    }
+  
+    .banner {
+        padding: 0px;
+        .banner-text {
+            padding-top: 10%;
+
+            h1 {
+                font-size: 48px;
+                text-align: center;
+            }
+        }
+        .banner-image {
+            width: 50%;
+            margin-top: 30px;
+            }
+    }
+    
+  }
+
+  /* tablets (landscape) */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .banner {
+        padding: 10%;
+
+        .banner-text {
+            padding-top: 20%;
+        }
+
+        .banner-image {
+            width: 80%;
+        }
+    }
+
+    nav.navbar ul li a.nav-link {
+        border-bottom: none !important;
+    }
+    
+  }
+
+    /* iPad Pro (Portrait and Landscape) */
+   
+    @media only screen 
+    and (min-width: 1024px) 
+    and (max-height: 1366px) 
+    and (-webkit-min-device-pixel-ratio: 1.5) {
+        .banner {
+            padding: 10%;
+    
+            .banner-text {
+                padding-top: 20%;
+            }
+    
+            .banner-image {
+                width: 80%;
+            }
+        }
+
+        nav.navbar ul li a.nav-link {
+            border-bottom: none !important;
+        }
+    }

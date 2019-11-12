@@ -1,6 +1,6 @@
 import React from 'react';
 import Logo from '../img/like.png';
-import '../App.css';
+import '../App.scss';
 
 function Banner () {
     // referans https://cdn.dribbble.com/users/380831/screenshots/7118539/media/c8aed4a7ea3dd89e3554b5ca4fc3ef20.png
