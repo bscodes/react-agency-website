@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Paytone+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
+
+$primaryColor: #352793;
+$secondaryColor: #1D4AD1;
+$primaryFont: 'Paytone One',
+sans-serif;
+$secondaryFont: 'Nunito', sans-serif;
+
+
+.header-transparent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+
+    .navbar-brand {
+        color: white;
+        transform: rotate(-90deg);
+        font-weight: 900;
+    }
+
+    span i {
+        color: white;
+        padding-left: 50%;
+    }
+    .navbar-toggler:focus {
+        outline: none!important;
+    }
+
+    nav.navbar ul li a.nav-link {
+        padding: 40px 0;
+        color: white;
+        font-family: $secondaryFont;
+        font-weight: bold;
+    }
+}
+
+
+/* for mobile phones (portrait) */
+@media (min-width: 320px) and (max-width: 480px) {
+    .header-transparent {
+
+        .navbar {
+            padding-top: 5%;
+
+            .navbar-brand {
+                margin-left: 3%;
+            }
+        }
+
+        .navbar-collapse.show,
+        .collapsing {
+            background: $primaryColor;
+        }
+
+        nav.navbar ul li a.nav-link {
+            color: white;
+            padding: 1rem;
+            border-bottom: 1px solid $secondaryColor;
+        }
+    }
+
+}
+
+/* for desktop */
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 30px !important;
+        padding-left: 30px !important;
+    }
+}
+
+/* for mobile phones (landscape) */
+
+/* iphone X */
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation : landscape) {
+    .header-transparent {
+        .navbar {
+            margin-top: 13px;
+        }
+
+        .navbar-collapse.show,
+        .collapsing {
+            background: $primaryColor;
+        }
+
+        nav.navbar ul li a.nav-link {
+            color: white;
+            padding: 1rem;
+            border-bottom: 1px solid $secondaryColor;
+        }
+    } 
+  }
+
+  /* for mobile phones (landscape) */
+  /* iphone 6/7/8 */
+  @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation : landscape) {
+    .header-transparent {
+
+        .navbar {
+            margin-top: 13px;
+        }
+
+        nav.navbar.fixed-top {
+            position: relative;
+        }
+
+        .navbar-collapse.show,
+        .collapsing {
+            background: $primaryColor;
+        }
+
+        nav.navbar ul li a.nav-link {
+            color: white;
+            padding: 1rem;
+            border-bottom: 1px solid $secondaryColor;
+        }
+    }
+  }
+
+  /* tablets (portrait) */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .header-transparent {
+
+        .navbar {
+            margin-top: 13px;
+        }
+
+        nav.navbar.fixed-top {
+            position: relative;
+        }
+
+        .navbar-collapse.show,
+        .collapsing {
+            background: $primaryColor;
+        }
+
+        nav.navbar ul li a.nav-link {
+            color: white;
+            padding: 1rem;
+            border-bottom: 1px solid $secondaryColor;
+        }
+    }
+  }
+
+  /* tablets (landscape) */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+    nav.navbar ul li a.nav-link {
+        border-bottom: none !important;
+    }
+    
+  }
+
+    /* iPad Pro (Portrait and Landscape) */
+    @media only screen 
+    and (min-width: 1024px) 
+    and (max-height: 1366px) 
+    and (-webkit-min-device-pixel-ratio: 1.5) {
+
+        nav.navbar ul li a.nav-link {
+            border-bottom: none !important;
+        }
+        
+    }
