@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Paytone+One&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
 
 $primaryColor: #352793;
 $secondaryColor: #1D4AD1;
+$thirdColor: #130f40;
+$forthColor: #0c2461;
 $primaryFont: 'Paytone One',
 sans-serif;
 $secondaryFont: 'Nunito', sans-serif;
+$thirdFont: 'Courgette', cursive;
 
 
 .App {
@@ -14,6 +18,16 @@ $secondaryFont: 'Nunito', sans-serif;
 
 .title-font {
     font-family: $primaryFont;
+    line-height: 130%;
+}
+
+.title-font-2 {
+    font-family: $secondaryFont;
+    line-height: 130%;
+}
+
+.title-font-3 {
+    font-family: $thirdFont;
     line-height: 130%;
 }
 
@@ -49,12 +63,35 @@ $secondaryFont: 'Nunito', sans-serif;
     color: rgb(132, 220, 255);
 }
 
+/*----------------------About us area--------------------------*/
+
+.about-us-area {
+    background: $thirdColor no-repeat;
+    background-image: url('./img/shape2.png');
+    background-position: top;
+    background-size: 25%;
+    padding: 5%;
+
+    .about-us-text-area {
+        padding: 3em;
+        background: $forthColor;
+        -webkit-box-shadow: 0px 0px 46px -17px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 46px -17px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 46px -17px rgba(0,0,0,0.75);
+
+        h2 {
+            font-weight: 900;
+        }
+    }
+
+}
+
 
 /* for mobile phones (portrait) */
 @media (min-width: 320px) and (max-width: 480px) {
 
     .banner {
-        padding: 20px 0 100px;
+        padding: 0px 0 180px;
     }
 
     .banner-image-desktop {
@@ -66,7 +103,7 @@ $secondaryFont: 'Nunito', sans-serif;
     }
 
     .banner-text {
-        padding-top: 10%;
+        padding-top: 30%;
     }
 
     .banner-text h1 {
@@ -77,6 +114,17 @@ $secondaryFont: 'Nunito', sans-serif;
 
     .banner-image {
         width: 90%;
+    }
+
+    /*----------------------About us area--------------------------*/
+    
+    .about-us-area {
+        background-size: cover;
+        .about-us-text-area {
+            h2 {
+                font-size: 25px;
+            }
+        }
     }
 
 }
@@ -91,10 +139,10 @@ $secondaryFont: 'Nunito', sans-serif;
 @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation : landscape) {
 
     .banner {
-        padding: 0px !important;
+        padding: 0px 0px 100px !important;
 
         .banner-text {
-            padding-top: 10%;
+            padding-top: 10% !important;
             
             h1 {
                 font-size: 48px;
@@ -103,13 +151,10 @@ $secondaryFont: 'Nunito', sans-serif;
         }
 
         .banner-image {
-            width: 50%;
+            width: 23% !important;
             margin-top: 30px;
         }
     }
-
-    
-    
     
   }
 
@@ -138,7 +183,7 @@ $secondaryFont: 'Nunito', sans-serif;
   @media (min-width: 768px) and (max-width: 1024px) {
 
     .banner {
-        padding: 0px;
+        padding: 0px 0px 100px;
         .banner-text {
             padding-top: 10%;
 

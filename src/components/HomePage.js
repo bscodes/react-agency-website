@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './Navbar/Navbar';
 import Banner from './Banner';
+import Body from './Body';
 import '../App.scss';
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
         <>
             <Navbar/>
             <Banner/>
+            <Body/>
         </>
     );
 }
