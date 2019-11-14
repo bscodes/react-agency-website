@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import Portfolio1 from '../img/portfolio/p1.jpg';
 import Portfolio2 from '../img/portfolio/p2.jpg';
 import Portfolio3 from '../img/portfolio/p3.jpg';
@@ -49,9 +50,12 @@ const Body = () => {
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 col-sm-6">
-                            <div className="portfolio-single">
-                                <div className="portfolio-thumb">
-                                    <img src={Portfolio1} alt="" className="center-block"/>
+                            <div className="portfolio-thumb">
+                                <img src={Portfolio1} alt="" className="center-block"/>
+                                <div className="overlay">
+                                    <h2>Hover effect 3</h2>
+                                    <Link className="info" to="/">link here</Link>
+                                    
                                 </div>
                             </div>
                         </div>
