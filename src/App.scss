@@ -36,7 +36,7 @@ $thirdFont: 'Courgette', cursive;
 
 .banner {
     color: white;
-    padding: 190px 0 125px;
+    margin-top: 60px;
 }
 
 .banner-image-mobile {
@@ -48,7 +48,7 @@ $thirdFont: 'Courgette', cursive;
 }
 
 .banner-text {
-    padding-top: 39%;
+    margin-bottom: 30px;
 }
 
 .banner-text h1 {
@@ -68,8 +68,8 @@ $thirdFont: 'Courgette', cursive;
 .about-us-area {
     background: $thirdColor no-repeat;
     background-image: url('./img/shape2.png');
-    background-position: top;
-    background-size: 25%;
+    background-position: center;
+    background-size: 400px;
     padding: 5%;
 
     .about-us-text-area {
@@ -84,6 +84,55 @@ $thirdFont: 'Courgette', cursive;
         }
     }
 
+}
+
+/*---------------------- portfolio area --------------------------*/
+
+.portfolio {
+    padding: 5%;
+
+    .portfolio-title {
+        padding: 0px 0px 40px 0px;
+    }
+
+    .portfolio-single {
+        margin-bottom: 9%;
+        .portfolio-thumb {
+            margin: 0 auto; 
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+/*---------------------- lead area --------------------------*/
+
+.lead {
+    background: $thirdColor;
+
+    h1 {
+        font-size: 100px;
+    }
+
+    button {
+        border-radius: 7px 7px 7px 7px;
+        -moz-border-radius: 7px 7px 7px 7px;
+        -webkit-border-radius: 7px 7px 7px 7px;
+        border: 0px solid #000000;
+        height: 50px;
+        width: 50%;
+        background: $primaryColor;
+        font-family: $secondaryFont;
+        font-weight: 900;
+        font-size: 100%;
+    }
+}
+
+/*---------------------- footer area --------------------------*/
+footer {
+    background: $thirdColor;
 }
 
 
@@ -103,7 +152,7 @@ $thirdFont: 'Courgette', cursive;
     }
 
     .banner-text {
-        padding-top: 30%;
+        padding-top: 10%;
     }
 
     .banner-text h1 {
@@ -119,7 +168,7 @@ $thirdFont: 'Courgette', cursive;
     /*----------------------About us area--------------------------*/
     
     .about-us-area {
-        background-size: cover;
+        background-size: 400px;
         .about-us-text-area {
             h2 {
                 font-size: 25px;
@@ -127,11 +176,32 @@ $thirdFont: 'Courgette', cursive;
         }
     }
 
+    /*----------------------portfolio area--------------------------*/
+    .portfolio {
+        .portfolio-title {
+            padding: 0;
+        }
+    }
+
+    /*----------------------lead area--------------------------*/
+    .lead {
+        h1 {
+            font-size: -webkit-xxx-large;
+        }
+    }
 }
+
 
 /* for desktop */
 @media (min-width: 992px) {
-    
+    .banner {
+        
+        padding: 190px 0 125px;
+
+        .banner-text {
+            padding-top: 39%;
+        }
+    }
 }
 
 /* for mobile phones (landscape) */
@@ -155,6 +225,12 @@ $thirdFont: 'Courgette', cursive;
             margin-top: 30px;
         }
     }
+
+    .portfolio {
+        .portfolio-title {
+            padding: 0;
+        }
+    }
     
   }
 
@@ -175,6 +251,12 @@ $thirdFont: 'Courgette', cursive;
         .banner-image {
         width: 50%;
         margin-top: 30px;
+        }
+    }
+
+    .portfolio {
+        .portfolio-title {
+            padding: 0;
         }
     }
   }

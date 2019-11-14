@@ -5,7 +5,8 @@ $primaryColor: #352793;
 $secondaryColor: #1D4AD1;
 $primaryFont: 'Paytone One',
 sans-serif;
-$secondaryFont: 'Nunito', sans-serif;
+$secondaryFont: 'Nunito',
+sans-serif;
 
 
 .header-transparent {
@@ -25,15 +26,20 @@ $secondaryFont: 'Nunito', sans-serif;
         color: white;
         padding-left: 50%;
     }
+
     .navbar-toggler:focus {
-        outline: none!important;
+        outline: none !important;
+    }
+
+    .navbar-collapse.show,
+    .collapsing {
+        background: $primaryColor;
     }
 
     nav.navbar ul li a.nav-link {
-        padding: 40px 0;
         color: white;
-        font-family: $secondaryFont;
-        font-weight: bold;
+        padding: 1rem;
+        border-bottom: 1px solid $secondaryColor;
     }
 }
 
@@ -66,9 +72,14 @@ $secondaryFont: 'Nunito', sans-serif;
 
 /* for desktop */
 @media (min-width: 992px) {
-    .navbar-expand-lg .navbar-nav .nav-link {
+    nav.navbar ul li a.nav-link {
         padding-right: 30px !important;
         padding-left: 30px !important;
+        padding-top: 40px !important;
+        color: white !important;
+        font-family: $secondaryFont !important;
+        font-weight: bold !important;
+        border-bottom: none !important;
     }
 }
 
@@ -91,12 +102,12 @@ $secondaryFont: 'Nunito', sans-serif;
             padding: 1rem;
             border-bottom: 1px solid $secondaryColor;
         }
-    } 
-  }
+    }
+}
 
-  /* for mobile phones (landscape) */
-  /* iphone 6/7/8 */
-  @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation : landscape) {
+/* for mobile phones (landscape) */
+/* iphone 6/7/8 */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation : landscape) {
     .header-transparent {
 
         .navbar {
@@ -118,10 +129,10 @@ $secondaryFont: 'Nunito', sans-serif;
             border-bottom: 1px solid $secondaryColor;
         }
     }
-  }
+}
 
-  /* tablets (portrait) */
-  @media (min-width: 768px) and (max-width: 1024px) {
+/* tablets (portrait) */
+@media (min-width: 768px) and (max-width: 1024px) {
     .header-transparent {
 
         .navbar {
@@ -143,25 +154,22 @@ $secondaryFont: 'Nunito', sans-serif;
             border-bottom: 1px solid $secondaryColor;
         }
     }
-  }
+}
 
-  /* tablets (landscape) */
-  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+/* tablets (landscape) */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+    nav.navbar ul li a.nav-link {
+        border-bottom: none;
+    }
+
+}
+
+/* iPad Pro (Portrait and Landscape) */
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
 
     nav.navbar ul li a.nav-link {
         border-bottom: none !important;
     }
-    
-  }
 
-    /* iPad Pro (Portrait and Landscape) */
-    @media only screen 
-    and (min-width: 1024px) 
-    and (max-height: 1366px) 
-    and (-webkit-min-device-pixel-ratio: 1.5) {
-
-        nav.navbar ul li a.nav-link {
-            border-bottom: none !important;
-        }
-        
-    }
+}
