@@ -93,77 +93,49 @@ $thirdFont: 'Courgette', cursive;
 
     .portfolio-title {
         padding: 0px 0px 40px 0px;
+
+        h1 {
+            font-size: 100px;
+        }
     }
 
     .portfolio-thumb {
         margin: 0 auto;
         margin-bottom: 9%;
 
-        width: 100%;
-        height: 100%;
+        /* width: 100%;
+        height: 100%; */
         float: left;
         overflow: hidden;
         position: relative;
         text-align: center;
         cursor: default;
         
-        .overlay {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            overflow: hidden;
-            top: 0;
-            left: 0;
-        }
-
+ 
         img {
             width: 100%;
-
-            display: block;
-            position: relative;
-            -webkit-transition: all 0.4s ease-in;
-            transition: all 0.4s ease-in;
+            transition: transform .25s, visibility .25s ease-in;
         }
-
         :hover img {
-            -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-            filter: grayscale(100%);
+            transform: scale(1.5);
         }
-
-        h2 {
-            text-transform: uppercase;
-            text-align: center;
-            position: relative;
-            font-size: 17px;
-            padding: 10px;
-        }
-
-        a.info {
-            display: inline-block;
-            text-decoration: none;
-            padding: 7px 14px;
-            margin: 50px 0 0 0;
-            background-color: transparent;
-        }
-
-        a.info, h2 {
-            -webkit-transform: scale(0.7);
-            -ms-transform: scale(0.7);
-            transform: scale(0.7);
-            -webkit-transition: all 0.4s ease-in;
-            transition: all 0.4s ease-in;
-            opacity: 0;
-            filter: alpha(opacity=0);
-            color: #fff;
-            text-transform: uppercase;
-        }
-
-        :hover a.info, :hover h2 {
-            opacity: 1;
-            filter: alpha(opacity=100);
-            -webkit-transform: scale(1);
-            -ms-transform: scale(1);
-            transform: scale(1);
+        .image-container {
+            .hover-content {
+                width: 100% !important;
+                height: 100% !important;
+                background: $primaryColor;
+            }
+            .title {
+                color: white;
+                opacity: 1;
+                margin-top: 40%;
+                font-weight: 900;
+                font-size: 30px;
+                font-family: $secondaryFont;
+            }
+            .hover-content.fadeIn {
+                opacity: 0.9;
+            }
         }
     }
 }
@@ -242,6 +214,10 @@ footer {
     .portfolio {
         .portfolio-title {
             padding: 0;
+
+            h1 {
+                font-size: -webkit-xxx-large;
+            }
         }
     }
 
