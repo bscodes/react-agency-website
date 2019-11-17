@@ -1,7 +1,8 @@
 import React from 'react';
-import Navbar from './Navbar/Navbar';
-import Banner from './Banner';
-import Body from './Body';
+import Navbar from '../components/Navbar/Navbar';
+import Footer from '../components/Footer'
+import Banner from '../components/Banner';
+import Body from '../components/Body';
 import '../App.scss';
 
 const Home = () => {
@@ -10,6 +11,7 @@ const Home = () => {
             <Navbar/>
             <Banner/>
             <Body/>
+            <Footer/>
         </>
     );
 }

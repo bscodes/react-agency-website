@@ -2,19 +2,28 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
 
+/* colors */
 $primaryColor: #352793;
 $secondaryColor: #1D4AD1;
 $thirdColor: #130f40;
 $forthColor: #0c2461;
+
+/* fonts */
 $primaryFont: 'Paytone One',
 sans-serif;
 $secondaryFont: 'Nunito', sans-serif;
 $thirdFont: 'Courgette', cursive;
 
+/* sizes */
+$titleFontSize: 100px;
+
+
 
 .App {
     text-align: center;
 }
+
+/* global classes */
 
 .title-font {
     font-family: $primaryFont;
@@ -30,6 +39,13 @@ $thirdFont: 'Courgette', cursive;
     font-family: $thirdFont;
     line-height: 130%;
 }
+
+
+
+.title-font-size {
+    font-size: $titleFontSize;
+}
+
 
 
 /* --------------------- Banner --------------------- */
@@ -95,7 +111,7 @@ $thirdFont: 'Courgette', cursive;
         padding: 0px 0px 40px 0px;
 
         h1 {
-            font-size: 100px;
+            font-size: $titleFontSize;
         }
     }
 
@@ -147,7 +163,7 @@ $thirdFont: 'Courgette', cursive;
     background: $thirdColor;
 
     h1 {
-        font-size: 100px;
+        font-size: $titleFontSize;
     }
 
     button {
@@ -169,9 +185,26 @@ footer {
     background: $thirdColor;
 }
 
+/*---------------------------------------------------------------*/
+/*---------------------- contact page ---------------------------*/
+/*---------------------------------------------------------------*/
+
+.contact {
+    padding-top: 7%;
+
+    p {
+        font-size: 1.6rem;
+    }
+}
+
+
 
 /* for mobile phones (portrait) */
 @media (min-width: 320px) and (max-width: 480px) {
+
+    .title-font-size {
+        font-size: -webkit-xxx-large;
+    }
 
     .banner {
         padding: 0px 0 180px;
@@ -322,6 +355,7 @@ footer {
 
   /* tablets (landscape) */
   @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
     .banner {
         padding: 10%;
 
@@ -341,6 +375,7 @@ footer {
     and (min-width: 1024px) 
     and (max-height: 1366px) 
     and (-webkit-min-device-pixel-ratio: 1.5) {
+
         .banner {
             padding: 10%;
     

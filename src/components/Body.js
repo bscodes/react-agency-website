@@ -1,5 +1,4 @@
 import React from 'react';
-// eslint-disable-next-line
 import { Link } from 'react-router-dom';
 import ImageContentHover from 'react-image-hover';
 import Portfolio1 from '../img/portfolio/p1.jpg';
@@ -88,17 +87,19 @@ const Body = () => {
                         </div>
 
                         {images.map(image => (
-
+                            // show portfoilo boxes by mapping the array of images
                             <div className="col-lg-4 col-md-6 col-sm-6" key={image.id} >
-                                <div className="portfolio-thumb">  
-                                    <ImageContentHover
-                                        className="center-block"
-                                        image = {image.src}
-                                        content={{
-                                            title: [image.title]
-                                        }} 
-                                        effect="fadeIn"
-                                    />
+                                <div className="portfolio-thumb">
+                                    <Link to="/contact">  
+                                        <ImageContentHover
+                                            className="center-block"
+                                            image = {image.src}
+                                            content={{
+                                                title: [image.title]
+                                            }} 
+                                            effect="fadeIn"
+                                        />
+                                    </Link>
                                 </div>
                             </div> 
                         ))}
@@ -126,18 +127,6 @@ const Body = () => {
                     </div>
                 </div>
             </section>
-
-            <footer>
-                <div className="container text-white">
-                    <div className="row align-items-center">
-                        <div className="col-sm-12">
-                            <p className="mt-4 mb-4 title-font-2">
-                            ©2019 A. All rights reserved.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </footer>
         </>
     );
 }
