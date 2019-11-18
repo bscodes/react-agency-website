@@ -6,7 +6,7 @@ const Contact = () => {
     return(
         <>
             <Navbar/>
-            <div className="contact mt-5">
+            <div className="contact section-title mt-5">
                 <div className="container text-white">
                     <div className="row align-items-center">
                         <div className="col-md-7 mx-auto">
@@ -22,11 +22,33 @@ const Contact = () => {
                             </div>
                         </div>
 
-                        <div className="col-md-8 col-md-offset-2">
-                            <div className="contact-form">
+                        <div className="col-lg-8 mx-auto text-white">
+                            <div className="contact-form mb-5 mt-5">
                                 <form>
                                     <div className="form-group">
-                                        
+                                        <div className="col-12">
+                                            <input type="text" className="form-control" placeholder="Name"/>
+                                        </div>
+                                    </div>
+                                    <div className="form-group">
+                                        <div className="col-12">
+                                            <input type="text" className="form-control" placeholder="Subject"/>
+                                        </div>
+                                    </div>
+                                    <div className="form-group">
+                                        <div className="col-12">
+                                            <input type="email" className="form-control" placeholder="Email"/>
+                                        </div>
+                                    </div>
+                                    <div className="form-group">
+                                        <div className="col-12">
+                                            <textarea className="form-control" placeholder="Message" rows="4"/>
+                                        </div>
+                                    </div>
+                                    <div className="col-12 text-center">
+                                        <button type="submit" className="btn mt-5">
+                                            Send Message
+                                        </button>
                                     </div>
                                 </form>
                             </div>

@@ -119,9 +119,11 @@ const Body = () => {
                                 Scaling-up your business 
                                 is our mission!
                                 </p>
-                                <button className="btn text-white">
-                                    Contact
-                                </button>
+                                <Link to="/contact">
+                                    <button className="btn text-white">
+                                        Contact
+                                    </button>
+                                </Link>
                             </div>
                         </div>
                     </div>

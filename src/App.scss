@@ -41,9 +41,12 @@ $titleFontSize: 100px;
 }
 
 
-
 .title-font-size {
     font-size: $titleFontSize;
+}
+
+.section-title {
+    padding-top: 7%;
 }
 
 
@@ -177,6 +180,14 @@ $titleFontSize: 100px;
         font-family: $secondaryFont;
         font-weight: 900;
         font-size: 100%;
+
+        :hover {
+            text-decoration: none;
+        }
+
+        a {
+            color: #ffff;
+        }
     }
 }
 
@@ -190,17 +201,108 @@ footer {
 /*---------------------------------------------------------------*/
 
 .contact {
-    padding-top: 7%;
 
     p {
         font-size: 1.6rem;
     }
+
+    .contact-form {
+        padding-bottom: 10%;
+
+        form-group:focus {
+            outline: none;
+        }
+
+        input, textarea {
+            background: transparent;
+            font-family: $secondaryFont;
+            border-bottom: 1px solid white;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-radius: 0;
+            padding: 4%;
+            color: white;
+        }
+
+        input::placeholder, textarea::placeholder {
+            color: white;
+            opacity: 0.5;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            box-shadow: none;
+        }
+
+        button {
+            border-radius: 7px 7px 7px 7px;
+            -moz-border-radius: 7px 7px 7px 7px;
+            -webkit-border-radius: 7px 7px 7px 7px;
+            border: 0px solid #000000;
+            height: 50px;
+            width: 50%;
+            background: $secondaryColor;
+            font-family: $secondaryFont;
+            color: white;
+            font-weight: 900;
+            font-size: 100%;
+    
+            :hover {
+                text-decoration: none;
+            }
+
+            :focus {
+                outline: white;
+                box-shadow: white;
+            }
+        }
+    }
 }
 
+/*---------------------------------------------------------------*/
+/*---------------------- services page ---------------------------*/
+/*---------------------------------------------------------------*/
+
+.services {
+    .services-title {
+        padding-bottom: 5%;
+    }
+    .title-text {
+        font-size: 1.6rem;
+    }
+
+    .service-name {
+        font-weight: 900;
+    }
+
+    .service-boxes {
+        padding: 10%;
+        .service-icon {
+            position: absolute;
+            right: 100%;
+        }
+
+        img {
+            border-radius: 40px;
+        }
+
+        .service-description {
+            font-size: 20px;
+            line-height: 2rem;
+        }
+    }
+}
 
 
 /* for mobile phones (portrait) */
 @media (min-width: 320px) and (max-width: 480px) {
+
+    /* global styles */
+    .section-title {
+        padding-top: 0%;
+    }
+    /* global styles end */
 
     .title-font-size {
         font-size: -webkit-xxx-large;
@@ -260,6 +362,25 @@ footer {
             font-size: -webkit-xxx-large;
         }
     }
+    /*----------------------contact page--------------------------*/    
+
+    .contact {
+        p {
+            font-size: 1rem;
+        }
+    }
+    /*----------------------services page--------------------------*/    
+
+    .services {
+        .service-boxes {
+            .service-icon {
+                position: unset;
+            }
+        }
+        .title-text {
+            font-size: 1rem;
+        }
+    }
 }
 
 
@@ -301,6 +422,11 @@ footer {
         .portfolio-title {
             padding: 0;
         }
+    }
+    
+    /* global styles */
+    .section-title {
+        padding-top: 0%;
     }
     
   }
@@ -349,6 +475,13 @@ footer {
             width: 50%;
             margin-top: 30px;
             }
+    }
+    .contact {
+        padding-bottom: 10%;
+
+        .contact-form {
+            padding-bottom: 30%;
+        }
     }
     
   }
