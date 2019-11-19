@@ -4,6 +4,11 @@ import Footer from '../components/Footer';
 
 // icon images
 import icon1 from '../img/services/instaicon.png';
+import mail from '../img/services/mail.png';
+import seo from '../img/services/seo.png';
+import content from '../img/services/content.png';
+import share from '../img/services/share.png';
+import web from '../img/services/web.png';
 
 
 const Services = () => {
@@ -18,8 +23,32 @@ const Services = () => {
         {
             "id": "2",
             "title": "Email Marketing",
-            "image": icon1,
+            "image": mail,
             "description": "Stay top of mind with one of the most creative email marketing campaigns."
+        },
+        {
+            "id": "3",
+            "title": "Search Engine Optimization",
+            "image": seo,
+            "description": "Rank in the top of search engines. Local SEO, link building, and more"
+        },
+        {
+            "id": "4",
+            "title": "Content Marketing Services",
+            "image": content,
+            "description": "We can be your company voice with quality content. Our writing team will give your brand the voice it needs to stick out."
+        },
+        {
+            "id": "5",
+            "title": "Social Media Paid Advertising",
+            "image": share,
+            "description": "From brand awareness campaigns to lead funnels, we have got the tools to create the right ads for your business. "
+        },
+        {
+            "id": "6",
+            "title": "Web Design & Development",
+            "image": web,
+            "description": "Our web design and development services include everything from graphic design to UX."
         }
     ]
 
@@ -48,12 +77,16 @@ const Services = () => {
                                     <div className="service-icon">
                                     <img className="service-icon-img mb-3" src={service.image} alt="instagram"/>
                                     </div>
-                                    <h3 className="service-name title-font-2">
-                                        {service.title}
-                                    </h3>
-                                    <p className="service-description text-left title-font-2 mt-3">
-                                    {service.description}
-                                    </p>
+                                    <div className="service-info-title">
+                                        <h3 className="service-name title-font-2">
+                                            {service.title}
+                                        </h3>
+                                    </div>
+                                    <div className="service-info">
+                                        <p className="service-description text-left title-font-2 mt-3">
+                                        {service.description}
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         ))

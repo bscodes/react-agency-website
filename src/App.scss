@@ -274,22 +274,27 @@ footer {
 
     .service-name {
         font-weight: 900;
+        font-size: 25px;
     }
 
     .service-boxes {
         padding: 10%;
         .service-icon {
             position: absolute;
-            right: 100%;
+            right: 90%;
         }
 
         img {
-            border-radius: 40px;
+            width: 90px;
+        }
+
+        .service-info-title {
+            height: 25px;
+            margin-bottom: 5%;
         }
 
         .service-description {
             font-size: 20px;
-            line-height: 2rem;
         }
     }
 }
@@ -372,10 +377,28 @@ footer {
     /*----------------------services page--------------------------*/    
 
     .services {
+        .services-title {
+            padding-bottom: 0;
+        }
         .service-boxes {
             .service-icon {
                 position: unset;
             }
+
+            .service-info-title {
+                height: 50px;
+                margin-bottom: 5%;
+
+                .service-name {
+                    font-size: 20px;
+                }
+            }
+
+            .service-description {
+                text-align: center !important;
+                font-size: 15px;
+            }
+    
         }
         .title-text {
             font-size: 1rem;
@@ -424,6 +447,21 @@ footer {
         }
     }
     
+    .services {
+        .services-title {
+            padding-bottom: 0;
+        }
+        .service-boxes {
+            .service-icon {
+                position: unset !important;
+            }
+
+            .service-description {
+                text-align: center !important;
+            }
+        }
+    }
+
     /* global styles */
     .section-title {
         padding-top: 0%;
@@ -481,6 +519,18 @@ footer {
 
         .contact-form {
             padding-bottom: 30%;
+        }
+    }
+
+    .services {
+        .service-boxes {
+            .service-icon {
+                position: unset !important;
+            }
+
+            .service-description {
+                text-align: center !important;
+            }
         }
     }
     
