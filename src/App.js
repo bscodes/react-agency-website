@@ -4,6 +4,7 @@ import ScrollToTop from './components/ScrollToTop';
 import HomePage from './pages/HomePage';
 import Contact from './pages/Contact';
 import Services from './pages/Services';
+import Works from './pages/Works';
 import './App.scss';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
                 <Route exact path = "/" component = {HomePage}/>
                 <Route exact path = "/contact" component = {Contact}/>
                 <Route exact path = "/services" component = {Services}/>
+                <Route exact path = "/works" component = {Works}/>
             </Switch>
         </HashRouter>
     </div>
