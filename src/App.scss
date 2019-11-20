@@ -299,6 +299,33 @@ footer {
     }
 }
 
+/*---------------------------------------------------------------*/
+    /*--------------- portfolio detail page --------------*/
+/*---------------------------------------------------------------*/
+
+.detail {
+    .services-title {
+        padding-bottom: 5%;
+    }
+    .detail-image {
+        width: 100%;
+    }
+
+    .detail-info {
+        .work-title {
+            font-weight: 900;
+        }
+
+        .description {
+            line-height: 1.6rem;
+            font-size: larger;
+        }
+        
+        hr {
+            border-color:white; border-style:solid
+        }
+    }
+}
 
 /* for mobile phones (portrait) */
 @media (min-width: 320px) and (max-width: 480px) {
