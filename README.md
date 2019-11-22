@@ -4,6 +4,19 @@
 
 A Creative Agency website built with React and Redux. Includes team, portfolio, services pages and a contact form
 
+### Technologies Used
+
+- ReactJS
+- JavaScript (ES6)
+- HTML5
+- Bootstrap 4 CSS framework
+- Redux
+- Sass
+- React Router
+- Git
+- GitHub
+- Npm
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
