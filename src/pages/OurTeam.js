@@ -33,10 +33,14 @@ class OurTeam extends Component {
                                             image = {person.image}
                                             content={{
                                                 title: [person.name],
-                                                position: [person.position]
+                                                body: [person.position]
                                             }} 
                                             effect="fadeIn"
                                         />
+                                    </div>
+                                    <div className="person-info mb-5">
+                                        <p className="person-name title-font-2"> {person.name} </p>
+                                        <p className="person-position title-font-2"> {person.position} </p>
                                     </div>
                                 </div> 
                             ))}       

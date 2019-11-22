@@ -336,9 +336,57 @@ footer {
 /*---------------------------------------------------------------*/
 
 .team {
+
+    margin-bottom: 10%;
+
+    .portfolio-thumb {
+        margin: 0 auto;
+        margin-bottom: 5%;
+
+        /* width: 100%;
+        height: 100%; */
+        float: left;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        cursor: default;
+
+        img {
+            width: 100%;
+            transition: transform .25s, visibility .25s ease-in;
+        }
+        :hover img {
+            transform: scale(1.5);
+        }
+
+        .image-container {
+            .hover-content {
+                width: 100% !important;
+                height: 100% !important;
+                background: $primaryColor;
+            }
+            .title {
+                color: white;
+                opacity: 1;
+                margin-top: 30%;
+                font-weight: 900;
+                font-size: 30px;
+                font-family: $secondaryFont;
+            }
+            .hover-content.fadeIn {
+                opacity: 0.9;
+            }
+        }
+    }
+
     p {
         font-size: 1.6rem;
     }
+
+    .person-info {
+        visibility: visible;
+        display: none;
+    } 
 }
 /* for mobile phones (portrait) */
 @media (min-width: 320px) and (max-width: 480px) {
@@ -445,6 +493,20 @@ footer {
             font-size: 1.6rem;
         }
     }
+    /*----------------------team page--------------------------*/    
+
+    .team {
+
+        .person-info {
+            visibility: visible;
+            display: inline;
+
+            .person-position {
+                font-size: 15px;
+                margin-bottom: 15%;
+            }
+        }
+    }
 }
 
 
@@ -458,6 +520,8 @@ footer {
             padding-top: 39%;
         }
     }
+
+    
 }
 
 /* for mobile phones (landscape) */
@@ -503,6 +567,18 @@ footer {
         }
     }
 
+    .team {
+        .person-info {
+            visibility: visible;
+            display: inline;
+
+            .person-position {
+                font-size: 15px;
+                margin-bottom: 15%;
+            }
+        }
+    }
+
     /* global styles */
     .section-title {
         padding-top: 0%;
@@ -535,8 +611,68 @@ footer {
             padding: 0;
         }
     }
+
+    .team {
+
+        padding-top: 0%;
+
+        .person-info {
+            visibility: visible;
+            display: inline;
+
+            .person-position {
+                font-size: 15px;
+                margin-bottom: 15%;
+            }
+        }
+    }
   }
 
+  /* pixel 2 xl (landscape) */
+  @media only screen and (min-width: 823px) and (orientation: landscape) {
+    .team {
+        padding-top: 0%;
+
+        .team-title {
+            h1 {
+                font-size: 75px;
+            }
+        }
+        .person-info {
+            visibility: visible;
+            display: inline;
+
+            .person-position {
+                font-size: 15px;
+                margin-bottom: 15%;
+            }
+        }
+    }
+  }
+
+  /* pixel 2 (landscape) */
+  @media only screen and (min-width: 731px) and (orientation: landscape) {
+    .team {
+        padding-top: 0%;
+
+        .team-title {
+            margin-top: 0rem ;
+
+            h1 {
+                font-size: 75px;
+            }
+        }
+        .person-info {
+            visibility: visible;
+            display: inline;
+
+            .person-position {
+                font-size: 15px;
+                margin-bottom: 15%;
+            }
+        }
+    }
+  }
   /* tablets (portrait) */
   @media (min-width: 768px) and (max-width: 1024px) {
 
@@ -574,6 +710,25 @@ footer {
             }
         }
     }
+
+    .team {
+        padding-top: 0%;
+
+        .team-title {
+            h1 {
+                font-size: 75px;
+            }
+        }
+        .person-info {
+            visibility: visible;
+            display: inline;
+
+            .person-position {
+                font-size: 15px;
+                margin-bottom: 15%;
+            }
+        }
+    }
     
   }
 
@@ -589,6 +744,25 @@ footer {
 
         .banner-image {
             width: 80%;
+        }
+    }
+
+    .team {
+        padding-top: 10%;
+
+        .team-title {
+            h1 {
+                font-size: 75px;
+            }
+        }
+        .person-info {
+            visibility: visible;
+            display: inline;
+
+            .person-position {
+                font-size: 15px;
+                margin-bottom: 15%;
+            }
         }
     }
     
@@ -609,6 +783,21 @@ footer {
     
             .banner-image {
                 width: 80%;
+            }
+        }
+
+        .team {
+            padding-top: 10%;
+    
+            
+            .person-info {
+                visibility: visible;
+                display: inline;
+    
+                .person-position {
+                    font-size: 15px;
+                    margin-bottom: 15%;
+                }
             }
         }
     }
