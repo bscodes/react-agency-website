@@ -2,6 +2,8 @@
 
 ## [View Demo](https://bscodes.github.io/react-agency-website/#/)
 
+A Creative Agency website built with React and Redux. Includes team, portfolio, services pages and a contact form
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
