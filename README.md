@@ -1,6 +1,6 @@
 # Creative Agency Website With React
 
-![screen](/img/screenshot.JPG)
+## [View Demo](https://bscodes.github.io/react-agency-website/#/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
