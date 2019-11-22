@@ -5,7 +5,7 @@ import LetsWork from '../components/LetsWorkTogether';
 
 const PortfolioDetail = (props) => {
     return(
-        <>
+        <>  
             <DetailComponent item={props.item}/>
             <LetsWork/>
         </>

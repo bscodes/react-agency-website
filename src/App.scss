@@ -496,7 +496,7 @@ footer {
     /*----------------------team page--------------------------*/    
 
     .team {
-
+        
         .person-info {
             visibility: visible;
             display: inline;
@@ -629,11 +629,13 @@ footer {
   }
 
   /* pixel 2 xl (landscape) */
-  @media only screen and (min-width: 823px) and (orientation: landscape) {
+  @media only screen and (min-width: 411px) and (max-width: 767px) {
     .team {
         padding-top: 0%;
 
         .team-title {
+            
+
             h1 {
                 font-size: 75px;
             }
@@ -650,8 +652,8 @@ footer {
     }
   }
 
-  /* pixel 2 (landscape) */
-  @media only screen and (min-width: 731px) and (orientation: landscape) {
+  /* pixel 2 */
+  @media only screen and (min-width: 411px) and (max-width: 767px) {
     .team {
         padding-top: 0%;
 
