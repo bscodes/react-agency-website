@@ -2,7 +2,6 @@ import React, { Component }from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import ImageContentHover from 'react-image-hover';
-import '../App.scss';
 
 class Portfolio extends Component {
 

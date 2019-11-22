@@ -1,11 +1,8 @@
 import React from 'react';
-import Navbar from '../components/Navbar/Navbar';
-import Footer from '../components/Footer';
 
 const Contact = () => {
     return(
         <>
-            <Navbar/>
             <div className="contact section-title mt-5">
                 <div className="container text-white">
                     <div className="row align-items-center">
@@ -56,7 +53,6 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-            <Footer/>
         </>
     );
 }

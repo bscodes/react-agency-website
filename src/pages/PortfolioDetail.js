@@ -1,17 +1,13 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import Navbar from '../components/Navbar/Navbar';
 import DetailComponent from '../components/PortfolioDetailComponent';
 import LetsWork from '../components/LetsWorkTogether';
-import Footer from '../components/Footer';
 
 const PortfolioDetail = (props) => {
     return(
         <>
-            <Navbar/>
             <DetailComponent item={props.item}/>
             <LetsWork/>
-            <Footer/>
         </>
     );
 }

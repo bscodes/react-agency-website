@@ -1,6 +1,4 @@
 import React from 'react';
-import Navbar from '../components/Navbar/Navbar';
-import Footer from '../components/Footer';
 import LetsWork from '../components/LetsWorkTogether';
 
 // service icons 
@@ -55,7 +53,6 @@ const Services = () => {
 
     return(
         <>
-        <Navbar/>
         <div className="services section-title mt-5">
             <div className="container text-white">
                 <div className="row align-items-center">
@@ -97,8 +94,6 @@ const Services = () => {
         </div>
             
         <LetsWork/>
-
-        <Footer/>
         </>
     );
 }

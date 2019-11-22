@@ -116,6 +116,10 @@ $titleFontSize: 100px;
         h1 {
             font-size: $titleFontSize;
         }
+
+        p {
+            font-size: 1.6rem;
+        }
     }
 
     .portfolio-thumb {
@@ -327,6 +331,15 @@ footer {
     }
 }
 
+/*---------------------------------------------------------------*/
+    /*--------------- team page --------------*/
+/*---------------------------------------------------------------*/
+
+.team {
+    p {
+        font-size: 1.6rem;
+    }
+}
 /* for mobile phones (portrait) */
 @media (min-width: 320px) and (max-width: 480px) {
 
@@ -399,7 +412,7 @@ footer {
 
     .contact {
         p {
-            font-size: 1rem;
+            font-size: 1.6rem;
         }
     }
     /*----------------------services page--------------------------*/    
@@ -429,7 +442,7 @@ footer {
     
         }
         .title-text {
-            font-size: 1rem;
+            font-size: 1.6rem;
         }
     }
 }
