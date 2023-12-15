@@ -1,12 +1,12 @@
-import React from 'react';
-import Portfolio from '../components/Portfolio';
+import React from "react";
+import Portfolio from "../components/Portfolio";
 
 const Works = () => {
-    return(
-        <>
-        <Portfolio/>
-        </>
-    );
-}
+  return (
+    <>
+      <Portfolio />
+    </>
+  );
+};
 
 export default Works;
