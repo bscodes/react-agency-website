@@ -1,22 +1,20 @@
 import React from "react";
-import { HashRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
-import Navbar from "./components/Navbar/Navbar";
-import Footer from "./components/Footer";
-import ScrollToTop from "./components/ScrollToTop";
-import HomePage from "./pages/HomePage";
-import Contact from "./pages/Contact";
-import Services from "./pages/Services";
-import PortfolioDetail from "./pages/PortfolioDetail";
-import Works from "./pages/Works";
-import OurTeam from "./pages/OurTeam";
 import "./App.scss";
+import Footer from "components/Footer";
+import Navbar from "components/Navbar/Navbar";
+import Contact from "pages/Contact";
+import HomePage from "pages/HomePage";
+import OurTeam from "pages/OurTeam";
+import PortfolioDetail from "pages/PortfolioDetail";
+import Services from "pages/Services";
+import Works from "pages/Works";
 
 const App = () => {
   return (
     <div className="App">
-      <HashRouter basename="/">
-        <ScrollToTop />
+      <BrowserRouter>
         <Navbar />
         <Switch>
           <Route exact path="/" component={HomePage} />
@@ -27,7 +25,7 @@ const App = () => {
           <Route exact path={"/team"} component={OurTeam} />
         </Switch>
         <Footer />
-      </HashRouter>
+      </BrowserRouter>
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.scss";
+import { navItems } from "lib/data/navItems";
 
 const Navbar = () => {
   return (
@@ -24,33 +25,17 @@ const Navbar = () => {
             </span>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav navbar-nav ml-auto">
-              <li className="nav-item">
-                <Link to="/" className="nav-link">
-                  Home
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/services" className="nav-link">
-                  Services
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/works" className="nav-link">
-                  Works
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/team" className="nav-link">
-                  Team
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/contact" className="nav-link">
-                  Contact
-                </Link>
-              </li>
-            </ul>
+            {navItems.map((item) => {
+              return (
+                <ul className="navbar-nav ml-auto" key={item.id}>
+                  <li className="nav-item">
+                    <Link to={item.link} className="nav-link">
+                      {item.name}
+                    </Link>
+                  </li>
+                </ul>
+              );
+            })}
           </div>
         </div>
       </nav>
